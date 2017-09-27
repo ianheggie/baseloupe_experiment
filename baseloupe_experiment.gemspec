@@ -22,7 +22,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.add_dependency "rails", "2.3.18"
-
+  
+  gem.required_ruby_version = '1.9.3'
   spec.add_dependency "activemerchant", "1.43.3"
   spec.add_development_dependency "active_utils", "2.2.3"
   spec.add_development_dependency "addressable", "2.4.0"
